@@ -24,7 +24,7 @@ def upload():
         x = image.img_to_array(img)
         x = np.expand_dims(x,axis = 0)
         pred =np.argmax(model.predict(x),axis=1)
-        index = ['Adidas', 'Amazon','Android', 'Apple','Ariel', 'Bic','BMW', 'Burger King', 'Cadbury', 'Chevrolet', 'Chrome', 'Coca Cola', 'Cowbell', 'Dominos', 'Fila','Gillet','Google', 'Goya oil', 'Guinness', 'Heinz', 'Honda','Hp', 'Huawei', 'Instagram', 'Kfc', 'Krisspy Kreme', 'Lays', 'Levis', 'Lg', 'Lipton', 'Mars', 'Marvel', 'McDonald', 'Mercedes Benz', 'Microsoft', 'MnM', 'Mtn', 'Mtn dew', 'NASA','Nescafe', 'Nestle', 'Nestle milo','Netflix',  'Nike', 'Nutella', 'Oral b','Oreo','Pay pal','Peak milk' 'Pepsi', 'PlayStation', 'Pringles', 'Puma','Reebok', 'Rolex', 'Samsung', 'Sprite', 'Starbucks','Tesla', 'Tiktok',  'Twitter', 'YouTube', 'Zara']
+        index = ['Adidas', 'Amazon','Android', 'Apple','Ariel', 'Bic','BMW', 'Burger King', 'Cadbury', 'Chevrolet', 'Chrome', 'Coca Cola', 'Cowbell', 'Dominos', 'Fila','Gillet','Google', 'Goya oil', 'Guinness', 'Heinz', 'Honda','Hp', 'Huawei', 'Instagram', 'Kfc', 'Krisspy Kreme', 'Lays', 'Levis', 'Lg', 'Lipton', 'Mars', 'Marvel', 'McDonald', 'Mercedes Benz', 'Microsoft', 'MnM', 'Mtn', 'Mtn dew', 'NASA','Nescafe', 'Nestle', 'Nestle milo','Netflix',  'Nike', 'Nutella', 'Oral b','Oreo','Pay pal','Peak milk', 'Pepsi', 'PlayStation', 'Pringles', 'Puma','Reebok', 'Rolex', 'Samsung', 'Sprite', 'Starbucks','Tesla', 'Tiktok',  'Twitter', 'YouTube', 'Zara']
         text="The LoGo is : " +str(index[pred[0]])
         return text    
 
