@@ -91,10 +91,7 @@
                     <button
                       type="button"
                       class="btn btn-success"
-                      id="btn-predict"
-                    >
-                      Predict!
-                    </button>
+                      id="btn-predict">Predict!</button>
                   </div>
                 </div>
 
@@ -137,12 +134,13 @@
         </section>
 
 
-        
+          
     </body>
     <footer>
       <script
-        src="/static/js/main.js"
+        src="{{ url_for('static', filename='js/main.js') }}"
         type="text/javascript"
       ></script>
     </footer>
+    
 </html>
